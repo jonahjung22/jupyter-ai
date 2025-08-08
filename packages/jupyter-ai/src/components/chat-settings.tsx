@@ -48,6 +48,8 @@ export function ChatSettings(props: ChatSettingsProps): JSX.Element {
     <Box
       className="jp-ai-ChatSettings"
       sx={{
+        height: '100%',
+        overflow: 'auto',
         '& .MuiAlert-root': {
           marginTop: 2
         }
