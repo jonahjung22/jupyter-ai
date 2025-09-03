@@ -107,7 +107,12 @@ PARAMETER_SCHEMAS: dict[str, dict[str, Any]] = {
         "type": "integer",
         "min": 1,
         "description": "Limit the next token selection to the K most probable tokens."
+    },
+    "api_base": {
+        "type": "string",
+        "description": "Base URL where LLM requests are sent, used for proxy gateways."
     }
+    
 }
 
 def get_parameter_schema(param_name: str) -> dict[str, Any]:
